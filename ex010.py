@@ -3,3 +3,4 @@
 real = float(input('quanto dinheiro tem na carteira? R$'))
 dolar = real/3.27
 print('R${} equivale US${:.2f}'.format(real, dolar, dolar))
+#print(f'R${real} reais equivale US${dolar}')
