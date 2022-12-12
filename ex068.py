@@ -27,6 +27,9 @@ while True:
             print('Você PERDEU!!!')
             break
     print('Vamos Jogar novamente ')
-print(f'Você venceu {v} vezes.')
+if v == 1:
+    print(f'Você venceu {v} vez.')
+else:
+    print(f'Você venceu {v} vezes.')
 
 

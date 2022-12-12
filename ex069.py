@@ -44,7 +44,7 @@ print(f'Total de pessoas com mais de 18 anos: {total18}')
 print(f'Ao todo temos {totH} homens cadastrados')
 print(f'E temos {totM20} mulheres com menos de 20 anos')
 
-print('Acabou')
+print('Programa finalizado!!! ')
 
 
 
