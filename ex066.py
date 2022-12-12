@@ -3,7 +3,7 @@
 # (desconsiderando a flag)
 
 
-'''num = soma = cont = 0
+num = soma = cont = 0
 while num != 999:
          num = int(input('Digite um número: '))
          if num != 999:
@@ -11,10 +11,10 @@ while num != 999:
             cont += 1
 print(f'A soma dos números digitados é {soma}')
 print(f'A quantidade de números digitados foram {cont}')
-'''
+
 
 # utilizando o break
-soma = cont = 0
+'''soma = cont = 0
 while True:
     num = int(input('Digite um valor(999 para parar):'))
     if num == 999:
@@ -22,3 +22,4 @@ while True:
     cont += 1
     soma += num
 print(f'A soma dos {cont} valores foi {soma} ')
+'''
