@@ -4,15 +4,6 @@
 um de seus lados deve ser maior que o valor absoluto (módulo) da diferença dos outros
 dois lados e menor que a soma dos outros dois lados.
 '''
-'''a = float(input('Qual o primeiro comprimento?'))
-b = float(input('Qual o segundo comprimento?'))
-c = float(input('Qual o terceiro comprimento'))
-
-if a > b%c and a < b+c:
-    print("Com esses comprimentos é posssivel formar um triângulo !!!")
-else:
-    print('Não é possivel formar um triângulo com esses comprimentos !!!')'''
-
 
 print('-='*20)
 print('ANALISADOR DE TRIÂNGULOS')
