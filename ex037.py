@@ -4,8 +4,7 @@
 # -2 para octal
 # -3 para hexadecimal
 
-'''num = int(input('Digite um número inteiro: '))
-converção = int(input('[1] Binário \n[2] Octal\n[3] Hexadecimal '))'''
+
 
 num = int(input('Digite um número inteiro: '))
 print('''Escolha uma das bases para conversão:
@@ -22,3 +21,21 @@ elif opção == 3:
 else:
     print('Opção INVÁLIDA. Tente novamente.')
 
+'''
+#Com outra formatação.
+n = int(input('Digite um número:'))
+base = int(input('''Qual a base de conversão?
+[1] Binário
+[2] Octal
+[3] Hexadecimal '''))
+
+if base == 1:
+    print(f'{n} convertido para BINÁRIO é igual a {bin(n) [2:]}') # 0b
+elif base == 2:
+    print(f'{n} convertido para OCTAL é igual a {oct(n)[2:]}') # 0O
+elif base == 3:
+    print(f'{n} convertido para HEXADECIMAL é igual a {hex(n)[2:]}') # 0x
+else:
+    print('Opção inválida, Tente novamente')
+
+    '''
