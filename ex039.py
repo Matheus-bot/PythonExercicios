@@ -17,6 +17,20 @@ elif idade > 18:
     print('O Prazo foi {} anos atrás'.format(deveria))
 print('Sua idade é {} anos'.format(idade))'''
 
+'''
+from datetime import date
+ano = int(input('Qual o ano de nascimento?'))
+atual = date.today().year
+idade = atual - ano
+if idade < 18:
+    print(f'Você ainda vai se alistar ao serviço Militar ainda faltam {18 - idade} anos ')
+elif idade == 18:
+    print('Já é hora de se alistar')
+elif idade > 18:
+    data = idade - 18
+    print(f'Já passou da hora de se alistar isso foi há {data} anos em {atual - data}')
+'''
+
 from datetime import date
 atual = date.today().year
 sexo  = int(input('''Qual seu sexo 
