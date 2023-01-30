@@ -5,38 +5,11 @@
 Seu programa também deverá mostrar o tempo que falta ou que passou do prazo.'''
 '''
 from datetime import date
-ano = int(input('Em que ano você nasceu? '))
-idade = date.today().year - ano
-deveria = date.today().year - ano - 18
-if idade < 18:
-    print('Você ainda vai se alistar para o serviço militar !!!')
-elif idade == 18:
-    print('É hora de se alistar')
-elif idade > 18:
-    print('Ja passou do tempo do alistamento')
-    print('O Prazo foi {} anos atrás'.format(deveria))
-print('Sua idade é {} anos'.format(idade))'''
-
-'''
-from datetime import date
-ano = int(input('Qual o ano de nascimento?'))
 atual = date.today().year
-idade = atual - ano
-if idade < 18:
-    print(f'Você ainda vai se alistar ao serviço Militar ainda faltam {18 - idade} anos ')
-elif idade == 18:
-    print('Já é hora de se alistar')
-elif idade > 18:
-    data = idade - 18
-    print(f'Já passou da hora de se alistar isso foi há {data} anos em {atual - data}')
-'''
-
-from datetime import date
-atual = date.today().year
-sexo  = int(input('''Qual seu sexo 
+sexo  = int(input("""Qual seu sexo 
 [1]Masculino 
 [2]Feminino 
-'''))
+"""))
 nasc = int(input('Ano de nascimento: '))
 idade = atual - nasc
 print('Quem nasceu em {} tem {} anos em {}'.format(nasc, idade, atual))
@@ -53,9 +26,31 @@ elif sexo == 1 and idade > 18:
     ano = atual - saldo
     print('Seu alistamento foi em {}'.format(ano))
 else:
-    print('Mas você não é obrigada a se alistar...')
-
-
+    print('Mas você não é obrigada a se alistar...')'''
+from time import sleep
+from datetime import date
+print('='*22)
+print('TESTE DE ALISTAMENTO')
+print('='*22)
+anonascimento = int(input('Em que ano você nasceu: '))
+anoatual = date.today().year
+idadeatual = anoatual - anonascimento
+sexo = int(input('''Qual seu sexo:
+[1]Masculino
+[2]Feminino 
+'''))
+print('ANALISANDO...')
+sleep(3)
+if idadeatual < 18 and sexo == 1:
+    print(f'''Você ainda vai se alistar no serviço militar... 
+    você tem {idadeatual} anos ainda te falta {18 - idadeatual} anos ''')
+elif idadeatual == 18 and sexo == 1:
+    print('\033[0;34mEstá na hora de se alistar\033[m ')
+elif idadeatual > 18 and sexo == 1:
+    print(f'''\033[0;33mJa passou do tempo do alistamento\033[m...
+    o prazo foi há {idadeatual-18} anos atrás''')
+else:
+    print('Você não é obrigada a se alistar')
 
 
 
