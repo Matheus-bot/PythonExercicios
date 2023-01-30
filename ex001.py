@@ -3,7 +3,7 @@
 # Simple Hello world
 print('Hello, World!')
 
-# Hello world  with a variable
+# Hello world with a variable
 msg = 'Hello, world!'
 print(msg)
 
