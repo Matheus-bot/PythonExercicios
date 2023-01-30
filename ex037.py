@@ -13,29 +13,28 @@ print('''Escolha uma das bases para conversão:
 [3] Converter para HEXADECIMAL''')
 opção = int(input('Sua opção'))
 if opção == 1:
-    print('{} Convertido para BINÁRIO é igual a {}'.format(num, bin(num)[2:]))
+    print(f'{num} Convertido para BINÁRIO é igual a \033[0;34m{bin(num)[2:]}\033[m')
 elif opção == 2:
-    print('{} Convertido para OCTAL é igual a {}'.format(num, oct(num)[2:]))
+    print(f'{num} Convertido para OCTAL é igual a \033[0;35m{oct(num)[2:]}\033[m')
 elif opção == 3:
-    print('{} Convertido para HEXADECIMAL é igual a {}'.format(num, hex(num)[2:]))
+    print(f'{num} Convertido para HEXADECIMAL é igual a \033[0;31m{hex(num)[2:]}\033[m')
 else:
     print('Opção INVÁLIDA. Tente novamente.')
 
 '''
-#Com outra formatação.
-n = int(input('Digite um número:'))
-base = int(input('''Qual a base de conversão?
-[1] Binário
+
+num = int(input('Digite um número inteiro: '))
+escolha = int(input("""Qual a base de conversão? 
+[1] Binário 
 [2] Octal
-[3] Hexadecimal '''))
+[3] Hexadecimal 
+"""))
+if escolha == 1:
+    print(f'Em binário é {bin(escolha)}')
+elif escolha == 2:
+    print(f'{escolha} em Octal é {oct(escolha)}')
+elif escolha == 3:
+    print(f'{escolha} em Hexadecimal é {hex(escolha)}')
 
-if base == 1:
-    print(f'{n} convertido para BINÁRIO é igual a {bin(n) [2:]}') # 0b
-elif base == 2:
-    print(f'{n} convertido para OCTAL é igual a {oct(n)[2:]}') # 0O
-elif base == 3:
-    print(f'{n} convertido para HEXADECIMAL é igual a {hex(n)[2:]}') # 0x
-else:
-    print('Opção inválida, Tente novamente')
 
-    '''
+'''
