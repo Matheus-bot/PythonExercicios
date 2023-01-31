@@ -3,7 +3,7 @@
 '''Até 9 anos : Mirim
 Até 14 anos : Infantil
 Até 19 anos: Junior
-Até 20  anos: Sênior
+Até 25  anos: Sênior
 Acima: Master'''
 
 print('=-'*25)
@@ -25,5 +25,5 @@ elif idade <= 25:
     print('Você está na categoria Sênior')
 else:
     print('Você está na categoria Master')
-print('Sua idade é {} anos'.format(idade))
+print(f'Sua idade é {idade} anos')
 

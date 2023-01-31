@@ -17,7 +17,7 @@ if r1 == r2 and r1 == r3 and r2 == r3 and triangulo == True:
     print(' Equilatero ')
 elif r1 != r2 and r1 != r3 and r2 != r3 and triangulo == True:
     print('Os seguimentos acima PODEM FORMAR triângulo! ', end='')
-    print(' escaleno ')
+    print(' Escaleno ')
 elif r1 == r2 or r2 == r3 or r1 == r3 and triangulo == True:
     print('Pode formar Triangulo', end='')
     print('Isósceles')
