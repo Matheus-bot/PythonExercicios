@@ -57,7 +57,27 @@ else:
     print('\033[0;31mOPÇÃO INVÁLIDA de pagamento. Tente novamente')
 print('Sua compra de R${:.2f} vai custar R${:.2f} no finall. '.format(preço, total))
 
+"""
+valor = float(input('Qual o valor do produto R$'))
+condição = int(input('''
+[1] A vista dinheiro/cheque
+[2] A vista no cartão
+[3] Até 2x no cartão
+[4] 3x ou mais no cartão
+'''))
+if condição == 1:
+    pagamento = valor - 10/100 * valor
+    print(f'O valor a ser pago é de R${pagamento}')
+if condição == 2:
+    pagamento = valor - 5/100 * valor
+    print(f'O valor a ser pago é de R${pagamento}')
+if condição == 3:
+    pagamento = valor
+    print(f'O valor a ser pago é de R${pagamento}')
+if condição == 4:
+    pagamento = valor + 20/100 * valor
+    print(f'O valor a ser pago é R${pagamento}')
 
-
+"""
 
 
