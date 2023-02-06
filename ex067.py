@@ -5,12 +5,13 @@ from time import sleep
 cont = 0
 while True:
     num = int(input('Digite um número Positivo para saber sua tabuada: '))
-    print('--'*21)
+    print('--'*26
+          )
     if num >= 0:
         for cont in range(0, 10):
             cont += 1
             print(f'{num} X {cont} = {num * cont}')
-        print('--'*21)
+        print('--'*26)
     else:
         break
 print('Finalizando...')
