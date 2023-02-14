@@ -56,16 +56,16 @@ while opção != 5:
     opção = int(input('>>>>>> Qual é a sua opção? '))
     if opção == 1:
         soma = n1 + n2
-        print('A soma entre {} e {} é {}'.format(n1, n2, soma))
+        print(f'A soma entre {n1} + {n2} é {soma}')
     elif opção == 2:
         produto = n1 * n2
-        print('O resultado de {} X {} é {}'.format(n1, n2, produto))
+        print(f'O resultado de {n1} X {n2} é {produto}')
     elif opção == 3:
         if n1 > n2:
             maior = n1
         else :
             maior = n2
-        print('Entre {} e {} o maior valor é {}'.format(n1, n2, maior ))
+        print(f'Entre {n1} e {n2} o maior valor é {maior}')
 
     elif opção == 4:
         print('Informe os números novamente:')
