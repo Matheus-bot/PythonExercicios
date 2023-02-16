@@ -3,9 +3,9 @@
 # 5! = 5x4x3x2x1=120
 '''
 from math import factorial
-n = int(input('digite  um número para calcular seu Fatorial: '))
+n = int(input('Digite um número para calcular seu Fatorial: '))
 f = factorial(n)
-print('O fatorial de {} é {}. '.format(n, f))'''
+print(f'O fatorial de {n} é {f}')'''
 
 n = int(input('Digite um número para calcular seu Fatorial: '))
 c = n
