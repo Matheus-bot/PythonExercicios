@@ -1,6 +1,7 @@
 # 62 - Melhore o desafio 061, perguntando para o usuário se ele quer mostrar mais alguns termos.
 # O programa ecerra quando ele disser que quer mostrar 0 termos.
 
+from time import sleep
 print('GERADOR DE PA')
 print('-='* 10)
 primeiro = int(input('Primeiro Termo '))
@@ -13,6 +14,7 @@ while mais != 0:
     total = total + mais
     while cont <= total :
         print('{} -> '.format(termo), end='')
+        sleep(0.3)
         termo  += razão
         cont += 1
     print('Pausa')
