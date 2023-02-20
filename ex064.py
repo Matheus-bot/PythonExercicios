@@ -10,3 +10,12 @@ while núm != 999:
         cont += 1
 print('Você digitou {} números e a soma entre eles foi {}.'.format(cont, soma))
 
+'''cont = n = soma = 0
+while n != 999:
+    n = int(input(f'{cont + 1}º Número'))
+    cont += 1
+    if n == 999:
+        break
+    soma += n
+print(f'Foram digitados {cont - 1} números')
+print(f'A soma dos números é {soma}')'''
