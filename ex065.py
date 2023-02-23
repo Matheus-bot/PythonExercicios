@@ -21,6 +21,24 @@ média = soma / quant
 print('Você digitou {} números e a média foi {}'. format(quant, média))
 print('O maior valor foi {} e o menor foi {}'.format(maior, menor))
 
+'''
+continuar = 'S'
+cont = soma = media = maior = menor = 0
+while continuar in 'Ss':
+    n = int(input('Digite um número:  '))
+    soma += n
+    cont += 1
+    if cont == 1:
+       maior = menor = n
+    if n > maior:
+       maior = n
+    elif n < menor :
+       menor = n
 
+    continuar = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
+media = soma / cont
+print('Acabou')
+print(f'A média é {media}')
+print(f'O maior número digitado foi {maior} e o menor foi {menor}')'''
 
 

@@ -16,12 +16,18 @@ else:
     print('E por isso ele NÃO É PRIMO!')
 
 '''
-soma = 0
-for c in range(0, num):
-   if num % 1 == 0 and num % num == 0:
-       soma += 1
-       if soma < 2:
-            print('É primo')
-   else :
-       print('Não é primo')'''
-
+numero = int(input('digite um número: '))
+tot = 0
+for c in range(1, numero + 1):
+    if numero % c == 0:
+        print('\033[33m', end='')
+        tot += 1
+    else:
+        print('\033[31m', end='')
+    print(f' {c}', end='')
+print(f'\n\033[mO número {numero} foi divisível {tot} vezes')
+if tot == 2:
+    print('E por isso ele é PRIMO!')
+else:
+    print('E por isso ele NÃO é PRIMO')
+'''
