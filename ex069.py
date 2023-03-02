@@ -5,24 +5,28 @@
 # c) Quantas mulheres tem menos de 20 anos.
 
 '''
-contidade = masculino = feminino = 0
-sexo = ''
-continuar = 'Ss'
-while continuar == 'Ss':
-      idade = int(input('Qual sua idade ? '))
-      sexo = str(input('Qual seu sexo? [M/F]'))
-      continuar = str(input('Quer continuar [S/N]'))
-      if idade > 18 :
-         contidade += 1
-         if sexo == 'Mm':
-            masculino += 1
-         elif sexo == 'Ff' and idade > 20:
-            feminino += 1
-      if continuar == 'Nn':
-         break
-print(f'Existem {contidade} pessoas maiores de 18 anos')
-print(f'Foram cadastrados {masculino} homens')
-print(f'Existem {feminino} mulheres com menos de 20 anos')'''
+cont = homens = mulheres = 0
+continuar = 'S'
+while continuar in 'Ss':
+    idade = int(input('Qual sua idade: '))
+    sexo = ' '
+    while sexo not in 'MF':
+        sexo = str(input('Qual seu sexo [M]asculino [F]eminino: ')).upper().strip()[0]
+    if sexo in 'Mm':
+        homens +=1
+    if idade >= 18:
+        cont += 1
+    if idade <= 20 and sexo in 'Ff':
+        mulheres += 1
+    continuar = str(input('Quer continuar [S|N]')).upper().strip()[0]
+    if continuar in 'Nn':
+        break
+print(f'{cont}pessoas tem mais de 18 anos')
+print(f'Foram cadastradoos {homens} homens ')
+print(f'Foram cadastradas {mulheres} mulheres com menos de 20 anos')
+'''
+
+
 total18 = totH = totM20 = 0
 while True:
     idade = int(input('Idade: '))
