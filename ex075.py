@@ -7,7 +7,7 @@
 numeros = (int(input('Digite o primeiro valor: ')), int(input('Digite o segundo valor')),
            int(input('Digite o terceiro valor: ')), int(input('Digite o quarto valor')))
 
-print(numeros)
+print(f'Você digitou os valores: {numeros}')
 print(f'O número 9 apareceu {numeros.count(9)} vezes', )
 if 3 in numeros:
     print(f'O número 3 apareceu primeiro na {numeros.index(3)+ 1}ª posição')
