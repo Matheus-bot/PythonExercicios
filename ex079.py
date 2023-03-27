@@ -12,7 +12,7 @@ while continuar in 'Ss':
     else:
         print('Esse valor ja está na lista... Não vou cadastrar... ')
 
-    continuar = str(input('Quer continuar? [S/N]')).upper().strip()
+    continuar = str(input('Quer continuar? [S/N]')).upper()
 
     if continuar in 'Nn':
        break
