@@ -3,7 +3,7 @@
 # b) A lista de valores, ordenada de forma decrescente.
 # c) Se o valor 5 foi digitado e está ou não na lista
 
-'''lista = []
+lista = []
 continuar = 'S'
 while continuar == 'S':
     n = lista.append(int(input('Digite um valor: ')))
@@ -19,7 +19,7 @@ print(f'A lista em ordem decrescente: {lista} ')
 if 5 in lista:
     print('Achei o número 5 na lista')
 else:
-    print('Não achei o número 5 na lista')'''
+    print('Não achei o número 5 na lista')
 
 
 
