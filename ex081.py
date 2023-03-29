@@ -8,7 +8,7 @@ continuar = 'S'
 while continuar == 'S':
     n = lista.append(int(input('Digite um valor: ')))
 
-    continuar = str(input('Quer continuar? ')).upper()
+    continuar = str(input('Quer continuar? [S/N]')).upper()
 
     if continuar == 'N':
         break
