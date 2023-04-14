@@ -1,0 +1,16 @@
+#Crie um programa que leia o nome a idade e a cor preferida de 5 pessoas, depois analise quantos menores de 20 anos gostam da cor azul
+#  e quantas pessoas gostam da cor vermelha 
+dados = list()
+cont = 0
+maiordeidade = 0
+for c in range(0, 5):
+    n = dados.append(str(input('Qual seu nome?')))
+    i = dados.append(int(input('Qual sua idade?')))
+    cor = dados.append(str(input('Qual sua cor favorita?')))
+
+    if dados[1] >= 18:
+        maiordeidade += 1
+
+print(f'Existem {maiordeidade} maiores de idade')
+print(dados)
+# Incompleto 
