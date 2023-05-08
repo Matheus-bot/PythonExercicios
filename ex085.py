@@ -12,5 +12,7 @@ for c in range(1,8):
         núm[1].append(valor)
 
 print('-=' * 30)
-print(f'Os valores pares digitados foram: {sorted(núm[0])}')
+
+núm[0].sort()
+print(f'Os valores pares digitados foram: {núm[0]}')
 print(f'Os valores impares digitados foram: {sorted(núm[1])} ')
