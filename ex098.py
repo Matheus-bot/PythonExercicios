@@ -2,21 +2,47 @@
 # fim e passo e realize a contagem.  Seu programa tem que realizar três contagens através da função criada:
 #
 # a) De 1 até 10, de 1 em 1
-# b) De 9 até 0, de 2 em 2
+# b) De 10 até 0, de 2 em 2
 # c) Uma contagem personalizada.
 from time import sleep
 
 
-def contagem(ini, fim, passo):
-    c = 0
-    print('-='* 20 )
-    print('Contagem de 1 até 10 de 1 em 1')
-    for c in range(ini, fim):
-        print(f' {c}', end='')
-        sleep(0.5)
-    print(' Fim!')
-    print('-='* 20)
+def contador(i, f, p):
+    if p < 0:
+        p *= -1
+    if p == 0:
+        p = 1
+    print('-=' * 20)
+    print(f'Contagem de {i} até {f} de {p} em {p}')
+    sleep(1)
+
+    if i < f:
+        cont = 1
+        while cont <= f:
+            print(f'{cont} ', end='')
+            sleep(0.3)
+            cont += p
+        print('Fim !')
+    else:
+        cont = i
+        while cont >= f:
+            print(f'{cont} ', end='')
+            sleep(0.3)
+            cont -= p
+        print('Fim!')
 
 
-#Programa principal
-contagem(1, 11, 1)
+# Programa principal
+contador(1, 10, 1)
+contador(10, 0, 2)
+print('-='* 20)
+print('Agora é a sua vez de personalizar a contagem')
+ini = int(input('Inicio: '))
+fim = int(input('Fim   : '))
+pas = int(input('Passo : '))
+contador(ini, fim, pas)
+
+
+
+
+
